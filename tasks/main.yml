@@ -1,0 +1,11 @@
+---
+# tasks file for jnakatsui.wordpress
+- name: create global includes dir for nginx
+  file:
+    state: directory
+    path: /etc/nginx/global/
+- name: sync directory
+  synchronize:
+    src: ./
+    dest: /etc/nginx/global/
+    delete: yes
