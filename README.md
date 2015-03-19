@@ -36,3 +36,15 @@ Author Information
 ------------------
 
 An optional section for the role authors to include contact information, or a website (HTML is not allowed).
+
+Note
+----
+Commented out the following from wordpress.conf
+
+# Directives to send expires headers and turn off 404 error logging.
+# location ~* \.(js|css|png|jpg|jpeg|gif|ico)$ {
+#         expires 24h;
+#         log_not_found off;
+#         try_files $uri $uri/ /index.php?$args;
+# }
+
